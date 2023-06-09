@@ -3,7 +3,7 @@ const { join } = require('path');
 const { generatePassword, validatePassword } = require('../utils/passwordUtil.js');
 const { issueJwt } = require('../utils/issueJwt.js');
 const User = require('../models/user.js');
-const passport = require('passport');
+const authMiddleware = require('../utils/auth.js');
 
 
 const router = Router();
@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 });
 
 // this should be protected
-router.get('/home', passport.authenticate('jwt', { session: false }),(req, res) => {
+router.get('/home', authMiddleware, (req, res) => {
     res.status(200).send('Bem vindo, Asa Branca');
 });
 
