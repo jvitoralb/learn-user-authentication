@@ -1,4 +1,8 @@
-## Lear User Authentication
+## Learn User Authentication
+
+Branches:
+- main - onde utilizei passportjs e passport-jwt.
+- custom-jwt - utilizo apenas de jsonwebtokens para autenticar usuários.
 
 Aplicativo construído para estudar `User Authentication` e Cryptografia.  
 Nesse mini-app foi utiliziado `Nodejs` com algumas bibliotecas como: `passportjs` e `jsonwebtokens`.
