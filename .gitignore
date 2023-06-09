@@ -1,0 +1,7 @@
+.env
+
+/node_modules/
+
+/config/id_rsa_priv.pem
+
+/cryptography/main.js
